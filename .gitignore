@@ -1,0 +1,7 @@
+venv/
+.cache/
+.local/
+.ssh/
+__pycache__/
+*.pyc
+.env
