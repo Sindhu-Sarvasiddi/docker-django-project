@@ -6,25 +6,25 @@ A Django web application containerized with Docker — a basic "DevOps demo" app
 
 docker-django-project/
 
-├── Dockerfile                          # builds the container image
+Dockerfile                          # builds the container image
 
-├── requirements.txt                    # Python deps: Django, tzdata
+requirements.txt                    # Python deps: Django, tzdata
 
-└── devops/                             # Django project root
+devops/                             # Django project root
 
-    ├── manage.py                       # Django's CLI entry point
+    manage.py                       # Django's CLI entry point
     
-    ├── devops/                         # project-level config
+    devops/                         # project-level config
     
-    │   ├── settings.py                 # app config: DEBUG=True, ALLOWED_HOSTS=["*"], INSTALLED_APPS
+       ├── settings.py                 # app config: DEBUG=True, ALLOWED_HOSTS=["*"], INSTALLED_APPS
     
-    │   ├── urls.py                     # root URL routing — maps "/" to the home view
+       ├── urls.py                     # root URL routing — maps "/" to the home view
     
-    │   ├── wsgi.py / asgi.py           # entry points for production servers (unused here; dev server is used instead)
+       ├── wsgi.py / asgi.py           # entry points for production servers (unused here; dev server is used instead)
     
-    │   └── __init__.py
+       └── __init__.py
     
-    └── demo/                           # the actual Django "app"
+    ── demo/                           # the actual Django "app"
     
         ├── apps.py                     # registers the app as "demo"
         
