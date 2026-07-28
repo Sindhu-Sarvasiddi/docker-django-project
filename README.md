@@ -6,11 +6,11 @@ A Django web application containerized with Docker — a basic "DevOps demo" app
 
 docker-django-project/
 
-Dockerfile                          # builds the container image
+ Dockerfile                          # builds the container image
 
-requirements.txt                    # Python deps: Django, tzdata
+ requirements.txt                    # Python deps: Django, tzdata
 
-devops/                             # Django project root
+ devops/                             # Django project root
 
     manage.py                       # Django's CLI entry point
     
