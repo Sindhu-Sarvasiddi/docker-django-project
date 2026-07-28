@@ -12,32 +12,32 @@ docker-django-project/
 
  devops/                             # Django project root
 
-    manage.py                       # Django's CLI entry point
+   manage.py                       # Django's CLI entry point
     
-    devops/                         # project-level config
+   devops/                         # project-level config
     
-       ├── settings.py                 # app config: DEBUG=True, ALLOWED_HOSTS=["*"], INSTALLED_APPS
+      ├── settings.py                 # app config: DEBUG=True, ALLOWED_HOSTS=["*"], INSTALLED_APPS
     
-       ├── urls.py                     # root URL routing — maps "/" to the home view
+      ├── urls.py                     # root URL routing — maps "/" to the home view
     
-       ├── wsgi.py / asgi.py           # entry points for production servers (unused here; dev server is used instead)
+      ├── wsgi.py / asgi.py           # entry points for production servers (unused here; dev server is used instead)
     
-       └── __init__.py
+      └── __init__.py
     
-    ── demo/                           # the actual Django "app"
+    ──demo/                           # the actual Django "app"
     
-        ├── apps.py                     # registers the app as "demo"
+      ├── apps.py                     # registers the app as "demo"
         
-        ├── models.py                   # empty — no database models defined
+      ├── models.py                   # empty — no database models defined
         
-        ├── views.py                    # defines the `home` view, renders demo_site.html
+      ├── views.py                    # defines the `home` view, renders demo_site.html
         
-        ├── urls.py                     # a leftover/unused urls file (not wired into the project — devops/urls.py is what's actually
+      ├── urls.py                     # a leftover/unused urls file (not wired into the project — devops/urls.py is what's actually
         used)
         
-        ├── admin.py / tests.py         # untouched Django defaults
+      |── admin.py / tests.py         # untouched Django defaults
         
-        └── templates/demo/demo_site.html  # the HTML page that's actually shown to visitors
+      └── templates/demo/demo_site.html  # the HTML page that's actually shown to visitors
 
 
 ## Step-by-step: how it all connects
